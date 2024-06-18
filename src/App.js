@@ -1,4 +1,3 @@
-// src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
@@ -13,7 +12,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/portfolio_website/home">
       <div className="app-container">
         <Navbar />
         <div className="content-container">
@@ -34,5 +33,3 @@ function App() {
 }
 
 export default App;
-
-

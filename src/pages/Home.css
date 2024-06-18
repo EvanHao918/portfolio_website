@@ -1,6 +1,7 @@
+/* src/pages/Home.css */
 
 .home-page {
-  padding-top: 70px; /* Ensure enough space for fixed Navbar */
+  padding-top: 70px; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,7 +15,7 @@
 .home-container {
   max-width: 900px;
   margin: 20px;
-  padding-top: 600px;
+  padding-top: 600px; 
   text-align: center;
   background-color: rgba(132, 40, 40, 0.1);
   border-radius: 15px;

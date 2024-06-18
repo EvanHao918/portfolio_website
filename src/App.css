@@ -27,7 +27,7 @@ body {
 
 .content-container {
   flex: 1;
-  padding-top: 80px; /* Adjusted to ensure enough space for fixed Navbar */
+  padding-top: 60px; /* Adjusted to ensure enough space for fixed Navbar */
   padding-bottom: 60px; /* Space for fixed Footer */
   width: 100%; /* Ensure full width */
 }
@@ -87,7 +87,7 @@ footer {
 
 .footer-content {
   max-width: 1000px;
-  margin: 0 flex;
+  margin: 0 auto;
   padding: 0 20px;
 }
 
