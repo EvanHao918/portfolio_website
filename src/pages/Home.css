@@ -1,0 +1,94 @@
+
+.home-page {
+  padding-top: 70px; /* Ensure enough space for fixed Navbar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.home-container {
+  max-width: 900px;
+  margin: 20px;
+  padding-top: 600px;
+  text-align: center;
+  background-color: rgba(132, 40, 40, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.home-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.home-container h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #dfd255;
+}
+
+.introduction {
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s;
+}
+
+.introduction:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.introduction h2 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  color: #ffdf5d;
+}
+
+.introduction p {
+  font-size: 1.2em;
+  line-height: 1.8;
+  margin: 15px 0;
+  transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effects for paragraphs */
+.introduction p:hover {
+  color: #ffdf5d; /* Change text color on hover */
+  transform: translateY(-5px); /* Slightly lift the paragraph */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+}
+
+.introduction p:nth-child(even) {
+  color: #ffdf5d;
+  font-weight: bold;
+}
+
+.introduction p::before {
+  content: '★';
+  margin-right: 5px;
+  color: #ffdf5d;
+}
+
+/* Styles for the homepage image */
+.homepage-image {
+  width: 100%; /* Makes the image responsive */
+  max-width: 300px; /* Maximum width of the image */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 50%; /* Makes the image circular */
+  margin: 20px 0; /* Adds some space around the image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.homepage-image:hover {
+  transform: scale(1.1); /* Slightly enlarges the image on hover */
+}

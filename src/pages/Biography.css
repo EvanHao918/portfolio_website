@@ -1,0 +1,105 @@
+/* src/pages/Biography.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .biography-container {
+    
+    max-width: 900px;
+    margin: 40px;
+    padding-top: 600px; /* Ensure enough space for fixed Navbar */
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+  }
+  
+  .biography-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffdf5d;
+  }
+  
+  .biography-content {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+  }
+  
+  .biography-content:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .biography-content h2 {
+    font-size: 2.2em;
+    margin-bottom: 15px;
+    color: #ffdf5d;
+  }
+  
+  .biography-content p {
+    font-size: 1.0em;
+    line-height: 1.8;
+    margin: 15px 0;
+    transition: color 0.3s, font-weight 0.3s;
+  }
+  
+  .biography-content p:hover {
+    color: #ffdf5d;
+    font-weight: bold;
+  }
+  
+  .biography-content p:nth-child(even) {
+    color: #6a11cb;
+  }
+  
+  .biography-content p::before {
+    content: '★';
+    margin-right: 8px;
+    color: #ffdf5d;
+  }
+  
+  .biography-content p:last-child::after {
+    content: ' ↗';
+    font-size: 1.2em;
+    color: #ffdf5d;
+    margin-left: 8px;
+    transition: transform 0.3s;
+  }
+  
+  .biography-content p:last-child:hover::after {
+    transform: rotate(360deg);
+  }
+
+  .profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .profile-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  

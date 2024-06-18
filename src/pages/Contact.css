@@ -1,0 +1,70 @@
+/* src/pages/Contact.css */
+
+.contact-page {
+  padding-top: 70px; /* Ensure enough space for fixed Navbar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 20px;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-size: 1.2em;
+  margin: 10px 0;
+  color: #fff;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.send-button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #ffdf5d;
+  color: #333;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.send-button:hover {
+  background-color: #feb47b;
+  transform: scale(1.05);
+}

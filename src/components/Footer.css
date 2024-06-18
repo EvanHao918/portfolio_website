@@ -1,0 +1,40 @@
+/* src/components/Footer.css */
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%; /* Ensure full width */
+  position: fixed;
+  bottom: 0;
+  left: 0; /* Ensure alignment to the left */
+  z-index: 1000;
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Center the items horizontally */
+  margin: 10px 0 0 0;
+}
+
+footer ul li {
+  margin: 0 10px;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}

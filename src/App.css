@@ -1,38 +1,113 @@
-.App {
+/* src/App.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%; /* Ensure full width */
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: #66b6eb;
+  color: #333;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%; /* Ensure full width */
+}
+
+.content-container {
+  flex: 1;
+  padding-top: 80px; /* Adjusted to ensure enough space for fixed Navbar */
+  padding-bottom: 60px; /* Space for fixed Footer */
+  width: 100%; /* Ensure full width */
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  background-color: #333;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav ul li a:hover {
+  background-color: #575757;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.skill-card {
+  border: 1px solid #ddd;
+  padding: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.skill-card h3 {
+  margin: 0;
+  font-size: 1.5em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.skill-card p {
+  margin: 10px 0 0 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+footer {
+  background-color: #333;
   color: white;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.footer-content {
+  max-width: 1000px;
+  margin: 0 flex;
+  padding: 0 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 0 0;
+}
+
+footer ul li {
+  margin: 0 10px;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
 }
